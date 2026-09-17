@@ -1,0 +1,123 @@
+/* ================================================ */
+/* =========== Application Home: Begin ============ */
+/* ================================================ */
+.__theme {
+    background: var(--white-color);
+    height: 100dvh;
+}
+
+/* ============================================= */
+/* =============== Header: Begin =============== */
+/* ============================================= */
+#__header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    height: 56px;
+    background: var(--white-color);
+    border-bottom: 1px solid var(--zink-color-200);
+    overflow: hidden;
+}
+
+.__inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ====== Header LSB: Logo ====== */
+a.lsb.site-logo {
+    display: flex;
+    cursor: pointer;
+}
+
+a.lsb.site-logo img {
+    height: 24px;
+    width: auto;
+    object-fit: cover;
+}
+
+/* ====== Header: Main Menu ====== */
+.msb.main-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+}
+
+a.elm:hover { color: var(--primary-color); }
+a.elm {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #696969;
+    padding: 4px 0px;
+    transition: all .1s ease-in-out;
+}
+
+/* ====== Header: RSB ====== */
+.rsb {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+/* ====== Header: Trigger Search ====== */
+i.bx.bx-search { font-size: 16px; }
+#trigger-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: #ffffff;
+    border: 1px solid var(--zink-color-200);
+    border-radius: 6px;
+    font-size: 14px;
+    color: #a1a1aa;
+    cursor: pointer;
+    transition: border-color .1s ease-in-out;
+}
+
+kbd.kbd {
+    margin-left: 32px;
+    padding: 4px 6px;
+    background: linear-gradient(rgb(255 255 255) 0%, rgb(240 241 245) 100%);
+    border: 1px solid var(--zink-color-200);
+    border-radius: 4px;
+    font-family: "Cascadia Code", monospace;
+    font-size: 12px;
+    color: #a1a1aa;
+}
+
+/* ====== Header: Auth ====== */
+a.login:hover { color: #d5501f; }
+a.login {
+    font-size: 14px;
+    padding: 4px 0px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 8px;
+    transition: color .1s ease-in-out;
+}
+
+i.bx.bx-user-circle { font-size: 16px; }
+a.get-started {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 8px 12px;
+    background: linear-gradient(179deg, rgb(255, 255, 255) 0%, rgb(240, 241, 245) 100%);
+    border: var(--zink-color-200) 1px solid;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #696969;
+}
