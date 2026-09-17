@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Getting Started - Omdb</title>
 
-    <!--- Favicon : --->
+    <!--- Favicon: --->
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
-    <!--- CSS : --->
+    <!--- CSS & FontCDN: --->
     <link rel="stylesheet" href="assets/css/globals.css">
     <link rel="stylesheet" href="assets/css/app.css">
-   
-    <!--- FontCDN : --->
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
 <body class="__theme">
@@ -29,18 +27,18 @@
 
             <!--- Header: Navigation --->
             <div class="msb main-menu">
-                <a href="/#home" class="elm">Home</a>
-                <a href="/#pricing" class="elm">Pricing</a>
-                <a href="/#docs" class="elm">Docs</a>
-                <a href="/#donation" class="elm">Donation</a>
-                <a href="/#contact" class="elm">Contact</a>
+                <a href="/home" class="elm">Home</a>
+                <a href="/pricing" class="elm">Pricing</a>
+                <a href="/docs" class="elm">Docs</a>
+                <a href="/give-donation" class="elm">Donation</a>
+                <a href="/contact" class="elm">Contact</a>
             </div>
 
             <!--- Header: Rsb --->
             <div class="rsb">
 
                 <!--- Header: Login --->
-                <a href="/auth/login" class="login">Login</a>
+                <a href="/login" class="login">Login</a>
 
                 <!--- Header: Trigger Search --->
                 <div id="trigger-search">
@@ -50,7 +48,7 @@
                 </div>
 
                 <!--- Header: Get Started --->
-                <a href="/auth/sign-in" class="get-started">
+                <a href="/sign-in" class="get-started">
                     <i class="bx bx-user-circle"></i>
                     Get Started
                 </a>
@@ -60,6 +58,11 @@
         </div>
     </header>
     <!--- Header: End --->
+
+
+    <!--- Overlay Search: Begin --->
+    <div id="overlay-search"></div>
+    <!--- Overlay Search: End --->
     
 </body>
 </html>

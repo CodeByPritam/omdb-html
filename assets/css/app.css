@@ -88,7 +88,7 @@ i.bx.bx-search { font-size: 16px; }
 
 kbd.kbd {
     margin-left: 32px;
-    padding: 4px 6px;
+    padding: 3px 6px;
     background: linear-gradient(rgb(255 255 255) 0%, rgb(240 241 245) 100%);
     border: 1px solid var(--zink-color-200);
     border-radius: 4px;
