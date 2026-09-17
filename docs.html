@@ -12,6 +12,7 @@
     <!--- CSS & FontCDN: --->
     <link rel="stylesheet" href="assets/css/globals.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/docs.css">
     <link rel='stylesheet' href='https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css'>
 </head>
 <body class="__theme">
@@ -59,6 +60,196 @@
     </header>
     <!--- Header: End --->
 
+    <!--- Docs Body: Begin --->
+    <section id="__docs">
+
+        <!--- Aside Bar: Begin --->
+        <aside id="asidebar">
+
+            <!--- Intro Sidebar List --->
+            <div class="intro sidebar-list">
+
+                <!--- Getting Started --->
+                <a href="/docs/getting-started" class="sidebar-link active">
+                    <i class="bx bx-book"></i>
+                    Getting Started
+                </a>
+
+                <!--- Roles & Permissions --->
+                <a href="/docs/roles-permissions" class="sidebar-link">
+                    <i class="bx bx-tachometer"></i>
+                    Roles & permissions
+                </a>
+
+                <!--- Response Format --->
+                <a href="/docs/response-format" class="sidebar-link">
+                    <i class="bx bx-loader-lines-alt"></i>
+                    Response Format
+                </a>
+
+                <!--- Error Codes --->
+                <a href="/docs/error-codes" class="sidebar-link">
+                    <i class="bx bx-message-circle-exclamation bx-flip-horizontal"></i>
+                    Error Codes
+                </a>
+
+            </div>
+
+            <!--- Sidebar Auth Endpoints --->
+            <p class="sidebar-heading">Authentication</p>
+            <ul class="sidebar-list">
+
+                <!--- Login --->
+                <a href="/docs/login" class="to-prt sidebar-link">
+                    <span class="ep-title">Login</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Register --->
+                <a href="/docs/register" class="to-prt sidebar-link">
+                    <span class="ep-title">Register</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Current User --->
+                <a href="/docs/current-user" class="to-prt sidebar-link">
+                    <span class="ep-title">Current User</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Verify Email --->
+                <a href="/docs/verify-email" class="to-prt sidebar-link">
+                    <span class="ep-title">Verify Email</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Resend Verification --->
+                <a href="/docs/resend-verification" class="to-prt sidebar-link">
+                    <span class="ep-title">Resend Verification</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Logout --->
+                <a href="/docs/Logout" class="to-prt sidebar-link">
+                    <span class="ep-title">Logout</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Refresh Token --->
+                <a href="/docs/refresh-token" class="to-prt sidebar-link">
+                    <span class="ep-title">Refresh Token</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Forget Password --->
+                <a href="/docs/forget-password" class="to-prt sidebar-link">
+                    <span class="ep-title">Forget Password</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Reset Password --->
+                <a href="/docs/reset-password" class="to-prt sidebar-link">
+                    <span class="ep-title">Reset Password</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+            </ul>
+
+            <!--- Content Discovery Endpoints --->
+            <p class="sidebar-heading">Content Discovery</p>
+            <ul class="sidebar-list">
+
+                <!--- Browse Title --->
+                <a href="/docs/browse-title" class="to-prt sidebar-link">
+                    <span class="ep-title">Browse Title</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Title Details --->
+                <a href="/docs/title-details" class="to-prt sidebar-link">
+                    <span class="ep-title">Title Deatils</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Seasons --->
+                <a href="/docs/seasons" class="to-prt sidebar-link">
+                    <span class="ep-title">Seasons</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Episodes --->
+                <a href="/docs/episodes" class="to-prt sidebar-link">
+                    <span class="ep-title">Episodes</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Similer Title --->
+                <a href="/docs/similer-title" class="to-prt sidebar-link">
+                    <span class="ep-title">Similer Title</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Title Stream --->
+                <a href="/docs/title-stream" class="to-prt sidebar-link">
+                    <span class="ep-title">Title Stream</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Episode Stream --->
+                <a href="/docs/episode-stream" class="to-prt sidebar-link">
+                    <span class="ep-title">Episode Stream</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Search --->
+                <a href="/docs/search" class="to-prt sidebar-link">
+                    <span class="ep-title">Search</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+            </ul>
+
+            <!--- User Library Endpoints --->
+            <p class="sidebar-heading">User Library</p>
+            <ul class="sidebar-list">
+
+                <!--- Add to Watchlist --->
+                <a href="/docs/add-to-watchlist" class="to-prt sidebar-link">
+                    <span class="ep-title">Add to Watchlist</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+                <!--- Get Watchlist --->
+                <a href="/docs/get-watchlist" class="to-prt sidebar-link">
+                    <span class="ep-title">Get Watchlist</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Remove Watchlist --->
+                <a href="/docs/remove-watchlist" class="to-prt sidebar-link">
+                    <span class="ep-title">Remove Watchlist</span>
+                    <span class="method method-del">DEL</span>
+                </a>
+
+                <!--- Get History --->
+                <a href="/docs/get-history" class="to-prt sidebar-link">
+                    <span class="ep-title">Get History</span>
+                    <span class="method method-get">GET</span>
+                </a>
+
+                <!--- Record History --->
+                <a href="/docs/record-history" class="to-prt sidebar-link">
+                    <span class="ep-title">Record History</span>
+                    <span class="method method-post">POST</span>
+                </a>
+
+            </ul>
+
+        </aside>
+        <!--- Aside Bar: End --->
+
+    </section>
+    <!--- Docs Body: End --->
 
     <!--- Overlay Search: Begin --->
     <div id="overlay-search"></div>

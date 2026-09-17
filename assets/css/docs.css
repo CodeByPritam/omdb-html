@@ -1,0 +1,101 @@
+/* ================================================ */
+/* =========== Application Docs: Begin ============ */
+/* ================================================ */
+section#__docs {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding-top: 56px;
+    display: grid;
+}
+
+/* ================================================ */
+/* =============== Aside Bar: Begin =============== */
+/* ================================================ */
+aside#asidebar {
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    width: 260px;
+    overflow-y: auto;
+    border-right: 1px solid #e4e4e7;
+    background: #ffffff;
+    padding: 16px;
+}
+
+i.bx.bx-book { font-size: 16px; }
+i.bx.bx-tachometer { font-size: 16px; }
+i.bx.bx-loader-lines-alt { font-size: 16px; }
+i.bx.bx-message-circle-exclamation.bx-flip-horizontal { font-size: 16px; }
+
+/* ====== Side Bar: Heading & List ====== */
+p.sidebar-heading {
+    padding: 6px 10px 6px 10px;
+    margin-bottom: 4px;
+    font-family: 'Sora';
+    font-size: 12px;
+    font-weight: 600;
+    color: #696969;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2px;
+    margin-bottom: 14px;
+}
+
+/* ====== Side Bar: 2 Part ====== */
+.to-prt { justify-content: space-between; }
+
+/* ====== Side Bar: Link ====== */
+a.sidebar-link:hover { background: #f7f7f7; }
+a.sidebar-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 8px;
+    padding: 8px 12px;
+    color: #484c58;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+a.sidebar-link.active { 
+    font-weight: 500;
+    background: #eceded !important;
+}
+
+/* ====== Side Bar: Method ====== */
+span.method {
+    font-family: Sora;
+    font-size: 10px;
+    font-weight: 500;
+    height: 18px;
+    width: 44px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-get {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.method-post {
+  background: #fff3ed;
+  color: #f86632;
+}
+
+.method-del {
+    background-color: #fef2f2;
+    color: #DC2626;
+}
