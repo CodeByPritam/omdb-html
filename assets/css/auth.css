@@ -2,7 +2,7 @@
 /* =========== Application Auth: Begin ============ */
 /* ================================================ */
 .__theme {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(218 215 161 / 12%) 80%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(161 195 218 / 12%) 80%);
     height: 100dvh;
 }
 
@@ -19,6 +19,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0px auto;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +47,7 @@
 
 .site-logo img {
     height: 100%;
-    width: 38px;
+    width: 34px;
     vertical-align: middle;
     position: relative;
     bottom: 2px;
@@ -81,13 +82,145 @@ p.small-text {
 }
 
 /* ====== Auth: Input Fields ====== */
+form.login-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    row-gap: 18px;
+}
 
+.group:first-child { margin-bottom: 6px; }
+.group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    color : rgba(0, 0, 0, 0.6);
+}
+
+/* ====== Inputs & Hovers ====== */
+input.login-manually,
+input.login-password {
+    outline: none;
+    height: 46px;
+    border: 1px solid #e4e4e7;
+    padding: 0 18px;
+    border-radius: 8px;
+    font-family: 'Sora', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: -0.1px;
+    overflow: hidden;
+    transition: border-color 0.1s ease-in-out;
+}
+
+input.login-manually:hover, input.login-manually:focus,
+input.login-password:hover, input.login-password:focus {
+    border-color: var(--primary-color);
+}
+
+label.placeholder {
+    font-family: 'Sora';
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    left: 14px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 1px 6px;
+    letter-spacing: 0.1px;
+    transition: color 0.1s ease-in-out;
+}
+
+input.login-manually:hover + label.placeholder, input.login-manually:focus + label.placeholder,
+input.login-password:hover + label.placeholder, input.login-password:focus + label.placeholder {
+    color: var(--primary-color);
+}
+
+/* ====== See Password ====== */
+.password-toggle {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-left: 1px solid #e4e4e7;
+}
+
+i.bx.bx-eye { 
+    font-size: 18px; 
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+/* ====== Message ====== */
+.field-message {
+    display: none;
+    align-items: center;
+    column-gap: 4px;
+    font-family: 'Sora';
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+    color: #ED4337;
+}
+
+i.bx.bx-alarm-exclamation { 
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ====== Reset Password ====== */
+a.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-top: 6px;
+}
+
+/* ====== Submit Button & Hovers ====== */
+button.login-submit:hover { color: var(--primary-color); }
+button.login-submit {
+    outline: none;
+    height: 44px;
+    background: linear-gradient(rgb(255 255 255) 0%, rgb(240 241 245) 100%);
+    border: 1px solid #e4e4e7;
+    border-radius: 8px;
+    font-family: 'Sora';
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    column-gap: 4px;
+    transition: color 0.1s ease-in-out;
+}
+
+i.bx.bx-key { 
+    font-size: 20px; 
+    transform: rotateZ(45deg); 
+}
 
 /* ====== Auth: Lines ====== */
 .line-container {
     display: flex;
     flex-direction: row;
-    margin: 12px 0 10px 0;
+    margin: 14px 0 12px 0;
     align-items: center;
 }
 
@@ -112,12 +245,14 @@ p.small-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 5px;
+    flex-wrap: wrap;
+    column-gap: 4px;
+    row-gap: 4px;
     margin-bottom: 2px;
     font-family: 'Geist';
     font-weight: 400;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .have-account a {
