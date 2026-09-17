@@ -39,7 +39,7 @@ a.lsb.site-logo {
 }
 
 a.lsb.site-logo img {
-    height: 24px;
+    height: 28px;
     width: auto;
     object-fit: cover;
 }
@@ -63,6 +63,11 @@ a.elm {
     transition: all .1s ease-in-out;
 }
 
+a.elm.active { 
+    color: var(--primary-color); 
+    font-weight: 500; 
+}
+
 /* ====== Header: RSB ====== */
 .rsb {
     display: flex;
@@ -72,6 +77,7 @@ a.elm {
 
 /* ====== Header: Trigger Search ====== */
 i.bx.bx-search { font-size: 16px; }
+#trigger-search:hover { border-color: var(--primary-color); }
 #trigger-search {
     display: flex;
     align-items: center;
@@ -83,11 +89,11 @@ i.bx.bx-search { font-size: 16px; }
     font-size: 14px;
     color: #a1a1aa;
     cursor: pointer;
-    transition: border-color .1s ease-in-out;
+    transition: border-color 0.1s ease-in-out;
 }
 
 kbd.kbd {
-    margin-left: 32px;
+    margin-left: 40px;
     padding: 3px 6px;
     background: linear-gradient(rgb(255 255 255) 0%, rgb(240 241 245) 100%);
     border: 1px solid var(--zink-color-200);
@@ -98,14 +104,15 @@ kbd.kbd {
 }
 
 /* ====== Header: Auth ====== */
-a.login:hover { color: #d5501f; }
+a.login:hover { color: #e5521d; }
 a.login {
-    font-size: 14px;
     padding: 4px 0px;
+    font-size: 14px;
     color: var(--primary-color);
     font-weight: 500;
-    margin-right: 8px;
-    transition: color .1s ease-in-out;
+    margin-right: 6px;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
 }
 
 i.bx.bx-user-circle { font-size: 16px; }
@@ -120,4 +127,10 @@ a.get-started {
     font-size: 14px;
     font-weight: 400;
     color: #696969;
+    transition: all 0.2s ease-in-out;
+}
+
+a.get-started:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
