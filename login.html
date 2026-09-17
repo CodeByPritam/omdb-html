@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Login - Omdb</title>
+
+    <!--- Favicon: --->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!--- CSS & FontCDN: --->
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+<body class="__theme">
+    
+    <!--- Login: Begin --->
+    <div id="login">
+        <div class="login-container">
+            <div class="login-card">
+                
+                <!--- Login: Logo --->
+                <div class="site-logo">
+                    <img src="assets/images/logo.png" alt="Omdb Logo">
+                    <span class="logo-name">Omdb</span>
+                </div>
+
+                <!--- Login: Greet --->
+                <div class="greet">
+                    <h1 class="text-welcome">Hello, Guest !!</h1>
+                    <p class="small-text">Login to Continue..</p>
+                </div>
+
+                <!--- Login: Input Fields --->
+                <form action="/login.html" method="post" enctype="multipart/form-data" class="login-form">
+
+                    <!--- Group: Identifier --->
+                    <div class="group">
+                        <input type="text" class="login-manually" name="identifier">
+                        <label class="placeholder">Username Or Email</label>
+                        <div class="field-message">
+                            <i class="bx bx-alert-circle"></i>
+                            Username can't be empty.
+                        </div>
+                    </div>
+
+                    <!--- Group: Password --->
+                    <div class="group">
+                        <input type="password" class="login-password" name="password">
+                        <label class="placeholder">Password</label>
+                        <div class="password-toggle"><i class="bx bx-eye"></i></div>
+                        <div class="field-message">
+                            <i class="bx bx-alert-circle"></i>
+                            Password can't be empty.
+                        </div>
+                    </div>
+
+                    <!--- Submit --->
+                    <button class="login-submit" type="submit">Login <i class='bx bx-key'></i></button>
+
+                </form>
+
+                <!--- Lines --->
+                <div class="line-container">
+                    <div class="line"></div>
+                    <div class="line-text">OR</div>
+                    <div class="line"></div>
+                </div>
+
+                <!--- Have Account --->
+                <div class="have-account">Don't have an account ? Click & <a href="signup.html">Get Started.</a></div>
+
+            </div>
+        </div>
+    </div>
+    <!--- Login: End --->
+
+</body>
+</html>

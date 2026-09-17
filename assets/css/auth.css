@@ -1,0 +1,127 @@
+/* ================================================ */
+/* =========== Application Auth: Begin ============ */
+/* ================================================ */
+.__theme {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(218 215 161 / 12%) 80%);
+    height: 100dvh;
+}
+
+/* ============================================= */
+/* ================ Auth: Begin ================ */
+/* ============================================= */
+#login {
+    position: relative;
+    height: 100dvh;
+}
+
+.login-container {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ====== Login: Card ====== */
+.login-card {
+    width: 360px;
+    max-width: 100%;
+    padding: 20px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 06%);
+}
+
+/* ====== Login: Logo ====== */
+.site-logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #e4e4e7;
+    column-gap: 4px;
+}
+
+.site-logo img {
+    height: 100%;
+    width: 38px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+}
+
+span.logo-name {
+    font-family: "Sora", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--primary-color);
+}
+
+/* ====== Auth: Greet ====== */
+.greet {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+h1.text-welcome {
+    font-family: 'Sora';
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-size: 18px;
+}
+
+p.small-text {
+    font-family: 'Sora';
+    font-size: 13px;
+}
+
+/* ====== Auth: Input Fields ====== */
+
+
+/* ====== Auth: Lines ====== */
+.line-container {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0 10px 0;
+    align-items: center;
+}
+
+.line-text {
+    font-family: 'Karla';
+    font-weight: 600;
+    font-size: 14px;
+    padding: 2px 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.line {
+    position: relative;
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: #e4e4e7;
+}
+
+/* ====== Auth: Have Account ====== */
+.have-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    margin-bottom: 2px;
+    font-family: 'Geist';
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.have-account a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--primary-color);
+}
