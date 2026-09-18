@@ -6,13 +6,15 @@ section#__docs {
     max-width: 1280px;
     margin: 0px auto;
     padding-top: 56px;
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* ================================================ */
-/* =============== Aside Bar: Begin =============== */
-/* ================================================ */
-aside#asidebar {
+/* ===================================================== */
+/* =============== Aside Bar Left: Begin =============== */
+/* ===================================================== */
+aside#asidebar-left {
     position: sticky;
     top: 56px;
     height: calc(100vh - 56px);
@@ -40,6 +42,7 @@ p.sidebar-heading {
     text-decoration: underline;
 }
 
+.sidebar-list:last-child { margin-bottom: 0px; }
 .sidebar-list {
     display: flex;
     flex-direction: column;
@@ -98,4 +101,36 @@ span.method {
 .method-del {
     background-color: #fef2f2;
     color: #DC2626;
+}
+
+/* ====================================================== */
+/* =============== Aside Bar Right: Begin =============== */
+/* ====================================================== */
+aside#asidebar-right {
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    width: 260px;
+    overflow-y: auto;
+    border-left: 1px solid #e4e4e7;
+    background: #ffffff;
+    padding: 16px;
+}
+
+span.on-this-page-title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #a1a1aa;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+p.on-this-page-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #71717a;
+    line-height: 20px;
 }
